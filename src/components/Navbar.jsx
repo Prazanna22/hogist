@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className='bg-black px-4 md:px-20 sticky top-0 flex justify-between py-8 items-center'>
+      <nav className='bg-black px-4 md:px-20 sticky top-0 flex justify-between py-8 items-center z-10'>
         <div>
           <img src={logo} alt="Logo" className='w-48' />
         </div>

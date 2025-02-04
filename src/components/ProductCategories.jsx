@@ -41,19 +41,19 @@ const ProductCategories = () => {
   return (
     <div className="px-4 md:px-10 lg:px-20 bg-black text-white py-10">
       <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-        <h1 className="font-bold text-3xl md:text-4xl my-6 text-center">
+        <h1 className="font-bold text-3xl md:text-4xl my-6 text-center" data-aos="fade-left">
           Product Categories
         </h1>
         <div className="flex gap-4">
           <button
             ref={prevRef}
-            className="bg-black px-2 py-2 rounded border border-white"
+            className="bg-black px-2 py-2 rounded border border-white"data-aos="fade-left"
           >
             <img src={left} alt="Previous" className="w-6 md:w-8" />
           </button>
           <button
             ref={nextRef}
-            className="bg-black px-2 py-2 rounded border border-white"
+            className="bg-black px-2 py-2 rounded border border-white"data-aos="fade-left"
           >
             <img src={right} alt="Next" className="w-6 md:w-8" />
           </button>
@@ -75,7 +75,7 @@ const ProductCategories = () => {
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
-            <div className="flex flex-col items-center rounded-2xl bg-gray-800 hover:bg-green-500 p-4 transition duration-300">
+            <div className="flex flex-col items-center rounded-2xl bg-gray-800 hover:bg-green-500 p-4 transition duration-300" data-aos="fade-left">
               <img
                 src={product.image}
                 alt={product.name}
